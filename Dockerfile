@@ -14,7 +14,7 @@ WORKDIR pve-kernel
 
 # Install dependencies.
 RUN apt-get update \
-    && apt-get install -y build-essential packaging-dev debian-keyring devscripts equivs \
+    && apt-get install -y build-essential packaging-dev debian-keyring devscripts equivs python3-dev python-is-python3 \
     && mk-build-deps --tool='apt-get -o Debug::pkgProblemResolver=yes --no-install-recommends --yes' --install debian/control.in \
     && cd && rm -rf pve-kernel \
     && rm -rf /var/lib/apt/lists/* \
