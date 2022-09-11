@@ -1,4 +1,4 @@
-FROM debian:bullseye
+FROM debian:11-slim
 LABEL maintainer="Paolo Velati"
 
 ARG DEBIAN_FRONTEND=noninteractive

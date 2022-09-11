@@ -1,2 +1,2 @@
-# Docker Debian11 PVE Builder
-Debian 11 (Bullseye) Docker container for building Proxmox packages.
+# docker-debian-pve-builder
+Debian container image for building Proxmox packages.
