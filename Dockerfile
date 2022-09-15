@@ -8,7 +8,7 @@ RUN apt-get update \
     && apt-get -y install curl wget git apt-utils \
     && echo 'deb http://download.proxmox.com/debian/pve bullseye pve-no-subscription' > /etc/apt/sources.list.d/pve-no-subscription.list \
     && curl https://enterprise.proxmox.com/debian/proxmox-release-bullseye.gpg -o /etc/apt/trusted.gpg.d/proxmox-release-bullseye.gpg \
-    && git clone https://git.proxmox.com/git/pve-kernel.git
+    && git clone --depth 1 --branch pve-kernel-5.15 https://git.proxmox.com/git/pve-kernel.git
 
 WORKDIR pve-kernel
 
